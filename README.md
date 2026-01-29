@@ -101,12 +101,19 @@ flowchart TD
 
 ---
 
-## 🏆 Best Sampling Technique per Model
-The best-performing sampling technique for each model is stored in:
 
-- `results/best_sampling_per_model.csv`
+## 🔍 Results
 
-This directly answers the comparison requirement of the assignment.
+Based on the experimental results:
+
+- **Logistic Regression** achieved its highest accuracy with **Stratified Sampling** (≈ 98.3%).
+- **Decision Tree** performed best with **Random Over Sampling (ROS)** (≈ 99.1%), indicating strong sensitivity to class balance.
+- **Random Forest** showed best and stable performance with **SMOTE** (≈ 98.9%), avoiding inflated accuracy from duplicated samples.
+- **SVM** achieved its highest accuracy using **Stratified Sampling** (≈ 98.3%).
+- **KNN** performed best with **Random Over Sampling (ROS)** (≈ 98.9%).
+
+Overall, the results confirm that **no single sampling technique is optimal for all models**, and the choice of sampling method significantly influences model performance.
+
 
 ---
 
@@ -134,8 +141,17 @@ Sampling_Assignment/
 
 ---
 
+
 ## ✅ Conclusion
-This assignment demonstrates that **sampling is critical** when dealing with imbalanced datasets. Through structured experimentation, tables, charts, and visual analysis, the impact of different sampling techniques on model performance is clearly illustrated.
+
+This study demonstrates that handling class imbalance through appropriate sampling techniques is essential for reliable machine learning performance. The experimental results show that different models respond differently to sampling strategies:
+
+- Stratified Sampling performed best for Logistic Regression and SVM.
+- Random Over Sampling was most effective for Decision Tree and KNN.
+- SMOTE provided the most stable and reliable performance for Random Forest.
+
+Overall, the results confirm that **there is no universally best sampling technique**, and the choice of sampling method should be based on the model being used.
+
 
 ---
 
