@@ -1,6 +1,5 @@
 # Sampling Assignment – Handling Imbalanced Credit Card Data
 
-> **Course Assignment | Clean, Structured, and Visualization-Rich Submission**
 
 ---
 
