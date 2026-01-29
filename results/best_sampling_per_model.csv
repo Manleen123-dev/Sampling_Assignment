@@ -1,6 +1,6 @@
 Model,Sampling,Accuracy
 M1_LogisticRegression,Sampling5_Stratified,0.9827586206896552
 M2_DecisionTree,Sampling1_ROS,0.9912663755458516
-M3_RandomForest,Sampling1_ROS,1.0
+M3_RandomForest,Sampling3_SMOTE,0.9890829694323144
 M4_SVM,Sampling5_Stratified,0.9827586206896552
 M5_KNN,Sampling1_ROS,0.9890829694323144
