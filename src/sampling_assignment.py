@@ -182,3 +182,74 @@ plt.ylabel("Mean Accuracy")
 plt.tight_layout()
 plt.savefig("../results/model_mean_accuracy.png")
 plt.close()
+################################################################################
+model_wise = acc_df.pivot(index="Model", columns="Sampling", values="Accuracy")
+
+plt.figure()
+plt.axis('off')
+
+table = plt.table(
+    cellText=model_wise.round(3).values,
+    rowLabels=model_wise.index,
+    colLabels=model_wise.columns,
+    loc='center'
+)
+
+table.scale(1, 1.5)
+plt.title("Model-wise Accuracy Comparison")
+plt.tight_layout()
+plt.savefig("../results/model_wise_accuracy_table.png")
+plt.close()
+########################################################################################
+plt.figure()
+
+for model in acc_df["Model"].unique():
+    subset = acc_df[acc_df["Model"] == model]
+    plt.plot(
+        subset["Sampling"],
+        subset["Accuracy"],
+        marker='o',
+        label=model
+    )
+
+plt.title("Accuracy Trend Across Sampling Techniques")
+plt.xlabel("Sampling Technique")
+plt.ylabel("Accuracy")
+plt.xticks(rotation=45)
+plt.legend()
+plt.tight_layout()
+plt.savefig("../results/accuracy_trend_across_sampling.png")
+plt.close()
+############################################################################################
+plt.figure()
+acc_df.boxplot(column="Accuracy", by="Sampling")
+plt.title("Accuracy Distribution per Sampling Technique")
+plt.suptitle("")
+plt.xlabel("Sampling Technique")
+plt.ylabel("Accuracy")
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig("../results/accuracy_boxplot_sampling.png")
+plt.close()
+#############################################################################################
+plt.figure()
+acc_df.boxplot(column="Accuracy", by="Model")
+plt.title("Accuracy Distribution per Model")
+plt.suptitle("")
+plt.xlabel("Model")
+plt.ylabel("Accuracy")
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig("../results/accuracy_boxplot_model.png")
+plt.close()
+# ============================================================
+# Best Sampling Technique per Model
+# ============================================================
+
+best_sampling = acc_df.loc[
+    acc_df.groupby("Model")["Accuracy"].idxmax()
+]
+
+best_sampling.to_csv("../results/best_sampling_per_model.csv", index=False)
+
+print("best_sampling_per_model.csv generated")
