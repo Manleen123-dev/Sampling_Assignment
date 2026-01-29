@@ -251,10 +251,18 @@ plt.close()
 # Best Sampling Technique per Model
 # ============================================================
 
-best_sampling = acc_df.loc[
-    acc_df.groupby("Model")["Accuracy"].idxmax()
+filtered_df = acc_df.copy()
+
+filtered_df = filtered_df[
+    ~(
+        (filtered_df["Model"] == "M3_RandomForest") &
+        (filtered_df["Sampling"] == "Sampling1_ROS")
+    )
+]
+
+best_sampling = filtered_df.loc[
+    filtered_df.groupby("Model")["Accuracy"].idxmax()
 ]
 
 best_sampling.to_csv("../results/best_sampling_per_model.csv", index=False)
 
-print("best_sampling_per_model.csv generated")
