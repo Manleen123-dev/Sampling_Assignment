@@ -1,0 +1,6 @@
+Sampling,Accuracy
+Sampling1_ROS,0.9296943231441048
+Sampling2_RUS,0.5666666666666667
+Sampling3_SMOTE,0.8838427947598253
+Sampling4_NearMiss,0.7
+Sampling5_Stratified,0.9793103448275863
