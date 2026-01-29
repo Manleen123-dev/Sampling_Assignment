@@ -10,9 +10,9 @@ M2_DecisionTree,Sampling3_SMOTE,0.9781659388646288
 M2_DecisionTree,Sampling4_NearMiss,0.8333333333333334
 M2_DecisionTree,Sampling5_Stratified,0.9655172413793104
 M3_RandomForest,Sampling1_ROS,1.0
-M3_RandomForest,Sampling2_RUS,0.5
+M3_RandomForest,Sampling2_RUS,0.6666666666666666
 M3_RandomForest,Sampling3_SMOTE,0.9890829694323144
-M3_RandomForest,Sampling4_NearMiss,0.5
+M3_RandomForest,Sampling4_NearMiss,0.8333333333333334
 M3_RandomForest,Sampling5_Stratified,0.9827586206896551
 M4_SVM,Sampling1_ROS,0.7510917030567685
 M4_SVM,Sampling2_RUS,0.6666666666666666

@@ -60,7 +60,12 @@ from sklearn.model_selection import train_test_split
 models = {
     "M1_LogisticRegression": LogisticRegression(max_iter=1000),
     "M2_DecisionTree": DecisionTreeClassifier(random_state=42),
-    "M3_RandomForest": RandomForestClassifier(random_state=42),
+     "M3_RandomForest": RandomForestClassifier(
+    n_estimators=100,
+    max_depth=10,
+    min_samples_leaf=5,
+    random_state=42
+),
     "M4_SVM": SVC(),
     "M5_KNN": KNeighborsClassifier()
 }
