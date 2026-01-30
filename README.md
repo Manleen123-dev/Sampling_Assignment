@@ -49,7 +49,7 @@ flowchart TD
 
 ---
 
-## 🤖 Machine Learning Models
+## Machine Learning Models
 
 | Model ID | Model |
 |--------|-------|
@@ -117,7 +117,7 @@ Overall, the results confirm that **no single sampling technique is optimal for 
 
 ---
 
-## 🧠 Key Observations
+## Key Observations
 - Oversampling techniques (ROS, SMOTE) generally improve performance.
 - Under-sampling methods may cause information loss on small datasets.
 - Tree-based models can overfit when datasets are very small.
@@ -125,7 +125,7 @@ Overall, the results confirm that **no single sampling technique is optimal for 
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 Sampling_Assignment/
@@ -142,7 +142,7 @@ Sampling_Assignment/
 ---
 
 
-## ✅ Conclusion
+##  Conclusion
 
 This study demonstrates that handling class imbalance through appropriate sampling techniques is essential for reliable machine learning performance. The experimental results show that different models respond differently to sampling strategies:
 
@@ -155,5 +155,5 @@ Overall, the results confirm that **there is no universally best sampling techni
 
 ---
 
-## ✍️ Author
+##  Author
 **Manleen Kaur**
