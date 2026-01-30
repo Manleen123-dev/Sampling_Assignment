@@ -3,12 +3,12 @@
 
 ---
 
-## 📌 Objective
+##  Objective
 To understand the importance of **sampling techniques** in handling **imbalanced datasets** and analyze how different sampling strategies affect the performance of multiple **machine learning models**.
 
 ---
 
-## 📊 Dataset Overview
+## Dataset Overview
 The dataset consists of credit card transactions with a **severely imbalanced target variable**, where fraudulent transactions form a very small minority.
 
 ### Class Distribution (Before Sampling)
@@ -22,7 +22,7 @@ The dataset consists of credit card transactions with a **severely imbalanced ta
 
 ---
 
-## 🔁 Overall Workflow (Flow Diagram)
+## Overall Workflow (Flow Diagram)
 
 ```mermaid
 flowchart TD
@@ -37,7 +37,7 @@ flowchart TD
 
 ---
 
-## ⚙️ Sampling Techniques Used
+## Sampling Techniques Used
 
 | Sampling ID | Technique |
 |------------|----------|
@@ -61,7 +61,7 @@ flowchart TD
 
 ---
 
-## 📈 Accuracy Comparison
+## Accuracy Comparison
 
 ### Accuracy Heatmap (Models vs Sampling Techniques)
 ![Accuracy Heatmap](results/accuracy_heatmap.png)
@@ -71,7 +71,7 @@ flowchart TD
 
 ---
 
-## 📊 Detailed Comparative Analysis
+## Detailed Comparative Analysis
 
 ### Model-wise Accuracy Comparison
 ![Model-wise Accuracy Table](results/model_wise_accuracy_table.png)
@@ -81,7 +81,7 @@ flowchart TD
 
 ---
 
-## 📦 Distribution Analysis
+##  Distribution Analysis
 
 ### Accuracy Distribution per Sampling Technique
 ![Accuracy Boxplot Sampling](results/accuracy_boxplot_sampling.png)
@@ -91,7 +91,7 @@ flowchart TD
 
 ---
 
-## 📉 Mean Accuracy Analysis
+##  Mean Accuracy Analysis
 
 ### Mean Accuracy per Sampling Technique
 ![Sampling Mean Accuracy](results/sampling_mean_accuracy.png)
@@ -102,7 +102,7 @@ flowchart TD
 ---
 
 
-## 🔍 Results
+##  Results
 
 Based on the experimental results:
 
